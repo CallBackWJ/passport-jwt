@@ -6,7 +6,8 @@ const app = express();
 //jwt 받아오는 부분
 const jwt = require("jsonwebtoken");
 
-//passport 엔진과 전략 받아오기
+//passport 엔진과 전략 받아오기   
+
 const passport = require("passport");
 const jwtStrategry  = require("./jwt")
 passport.use(jwtStrategry); //전략 사용
